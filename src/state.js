@@ -2,9 +2,8 @@ import { observable } from './_vue'
 import { keys } from './_utils'
 import { isValueWrapper } from './_internal'
 
-export default function state(obj) {
-  obj = obj && typeof obj === 'object' ? { ...obj } : Object.create(null)
-
+export default function state(o) {
+  const obj = Object.assign({}, o)
   // According to the RFC ——
   // ```
   // Value wrappers are also automatically unwrapped when accessed as a nested
