@@ -1,36 +1,15 @@
-import Vue from 'vue'
-import { hooks, value, computed } from './hooks'
+import Vue, { observable, nextTick } from './_vue'
+import './mixin'
 
-Vue.use(hooks)
+export default Vue
+export { observable as state, nextTick }
 
-new Vue({
-  el: '#app',
-  render(h) {
-    return h('div', null, [
-      h(
-        'button',
-        {
-          on: {
-            click: () => {
-              this.data.count++
-            }
-          }
-        },
-        'next'
-      ),
-      h('br'),
-      this.data.count,
-      ' * 2 = ',
-      this.double
-    ])
-  },
-  setup() {
-    const data = value({ count: 2 })
-    const double = computed(() => data.count * 2)
+export { default as value } from './value'
+export { default as computed } from './computed'
+export { default as watch } from './watch'
 
-    return {
-      data,
-      double
-    }
-  }
-})
+export * from './lifecycles'
+
+export function createComponent(vue) {
+  return vue
+}
