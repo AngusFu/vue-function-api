@@ -6,7 +6,8 @@
 
 ## Notice
 
-value unwraping is is available yet.
+**Value Unwraping** is is available yet.
 
 - value/computed: not supported (primitives ONLY)
 - inject: not supported
+- state: partial support (not deep nested)

@@ -20,6 +20,9 @@ export function inject(injectKey) {
   if (inject) {
     while (vm) {
       const o = vm._provided_fn_api
+      // TODO
+      // implement auto unwrapping
+      // through watch....
       if (o && o[injectKey]) {
         return o[injectKey]
       }
