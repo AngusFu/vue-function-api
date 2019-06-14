@@ -4,3 +4,13 @@ export function flushPromises() {
     scheduler(resolve)
   })
 }
+
+export function keys(obj) {
+  if (typeof Reflect !== 'undefined') {
+    return Reflect.ownKeys(obj)
+  }
+  return [
+    ...Object.getOwnPropertyNames(obj),
+    ...Object.getOwnPropertySymbols(obj)
+  ]
+}
