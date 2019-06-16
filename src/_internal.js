@@ -4,13 +4,9 @@ export function isValueWrapper(source) {
 }
 
 export let currentInstance = null
-export let isSettingUp = false
 
-export function setCurrentInstance (instance) {
+export function setCurrentInstance(instance) {
   currentInstance = instance
-  if (instance) {
-    isSettingUp = !!currentInstance
-  }
 }
 
 export function ensureCurrentInstance() {
