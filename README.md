@@ -6,8 +6,10 @@
 
 ## Notice
 
-**Value Unwraping** is is available yet.
+1. **Value Unwraping** is is available yet.
 
 - value/computed: not supported
 - inject: not supported
 - state: partial support (not deep nested)
+
+2. Functional Components are not tested/supported yet.

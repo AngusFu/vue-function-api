@@ -1,4 +1,4 @@
-import Vue, { observable, nextTick } from './_vue'
+import Vue, { nextTick } from './_vue'
 import './mixin'
 
 export default Vue
