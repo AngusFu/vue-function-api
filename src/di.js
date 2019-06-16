@@ -5,8 +5,8 @@ export function provide(provide) {
   const vm = currentInstance
   if (provide) {
     provide = typeof provide === 'function' ? provide.call(vm) : provide
-    const p = vm._provided_fn_api || Object.create(null)
-    vm._provided_fn_api = {
+    const p = vm._provide || Object.create(null)
+    vm._provide = {
       ...p,
       ...provide
     }
@@ -19,10 +19,7 @@ export function inject(injectKey) {
 
   if (inject) {
     while (vm) {
-      const o = vm._provided_fn_api
-      // TODO
-      // implement auto unwrapping
-      // through watch....
+      const o = vm._provide
       if (o && o[injectKey]) {
         return o[injectKey]
       }

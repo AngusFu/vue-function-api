@@ -1,6 +1,5 @@
 import Vue from './index'
 import { inject, provide } from './di'
-import { onMounted } from './lifecycles'
 
 it('works as MVP', done => {
   const s = Symbol()
