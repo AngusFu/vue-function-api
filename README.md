@@ -8,6 +8,6 @@
 
 **Value Unwraping** is is available yet.
 
-- value/computed: not supported (primitives ONLY)
+- value/computed: not supported
 - inject: not supported
 - state: partial support (not deep nested)
