@@ -1,6 +1,6 @@
 import { observable } from './_vue'
-import { ValueWrapperSymbol } from './_internal'
+import { SYMBOL_VALUE_WRAPPER } from './_internal'
 
 export default function value(initialVal) {
-  return observable({ value: initialVal, [ValueWrapperSymbol]: 1 })
+  return observable({ value: initialVal, [SYMBOL_VALUE_WRAPPER]: 1 })
 }

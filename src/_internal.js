@@ -1,6 +1,6 @@
-export const ValueWrapperSymbol = Symbol('SymbolValueWrapper')
+export const SYMBOL_VALUE_WRAPPER = Symbol('SymbolValueWrapper')
 export function isValueWrapper(source) {
-  return source ? source[ValueWrapperSymbol] === 1 : false
+  return source ? source[SYMBOL_VALUE_WRAPPER] === 1 : false
 }
 
 export let currentInstance = null
