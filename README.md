@@ -4,6 +4,12 @@
 
 - [Vue Function-based API RFC 翻译](https://zhuanlan.zhihu.com/p/68477600)
 
+## Demo
+
+[Live](https://codesandbox.io/s/github/AngusFu/vue-functional-api-demo)
+
+[Source](https://github.com/AngusFu/AngusFu/vue-functional-api-demo)
+
 ## Notice
 
 1. **Value Unwraping** is is available yet. So you have to use `somethingReactive.value` `@click="somethingReactive.value++"` in your render function (or template).
