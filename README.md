@@ -16,10 +16,10 @@
 
 ## Usage
 
-Just replace every `import Vue from 'vue'` in your files to `import Vue from 'vue-functional-api'`.
+Just replace every `import Vue from 'vue'` in your files with `import Vue from 'vue-functional-api'`.
 
 Since `import Vue from 'vue'` also occurs in the es module bundle of this package, a webpack alias may not work.
 
 ## API
 
-Take a look at [vue-functional-api/blob/master/src/index.js](https://github.com/AngusFu/vue-functional-api/blob/master/src/index.js)
+Take a look at [vue-functional-api/blob/master/src/index.js](https://github.com/AngusFu/vue-functional-api/blob/master/src/index.js).
