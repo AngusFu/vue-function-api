@@ -8,7 +8,7 @@
 
 [Live](https://codesandbox.io/s/github/AngusFu/vue-functional-api-demo)
 
-[Source](https://github.com/AngusFu/AngusFu/vue-functional-api-demo)
+[Source](https://github.com/AngusFu/vue-functional-api-demo)
 
 ## Notice
 
