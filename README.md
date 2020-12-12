@@ -28,4 +28,4 @@ Since `import Vue from 'vue'` also occurs in the es module bundle of this packag
 
 ## API
 
-Take a look at [vue-functional-api/blob/master/src/index.js](https://github.com/AngusFu/vue-functional-api/blob/master/src/index.js).
+Take a look at [src/index.js](https://github.com/AngusFu/vue-function-api/blob/master/src/index.js).
